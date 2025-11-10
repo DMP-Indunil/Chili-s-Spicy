@@ -1,0 +1,107 @@
+<html>
+<head>
+    <title>Log In/Register</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="header" style="background-image: linear-gradient(rgba(4, 9, 30, 0.445),rgba(4, 9, 30, 0.562)), url(assets/images/login-background.jpg);">
+
+        <a href="index.html"><img src="assets/images/logo.png"></a>
+
+        <!--Navigation bar-->
+        <div class="navbar">
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="varieties.html">VARIETIES</a></li>
+                    <li><a href="growing-tips.html">GROWING TIPS</a></li>
+                    <li><a href="health.html">HEALTH BENEFITS</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <!--body section-->
+        <div class="body">
+            <!--welcome-->
+            <div class="content">
+                <h1>Chili's Spicy</h1>
+                <P class="par">We are going fast with Sri Lankan chillies. The country has a rich culinary scene bursting with flavor, of which chillies are a key ingredient. Get ready to explore the world with Sri Lankan Chillies. Each has its own unique quality and taste.</P>
+                <button class="join"><a href="index.html">JOIN US</a></button>
+            </div>
+        </div>
+    </div>
+
+    <!--Login form-->
+    <div class="head-sec">
+        <h1>Log In or Register</h1>
+        <br>
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btnn"></div>
+                <button type="button" class="btn" onclick="login()">Log In</button>
+                <button type="button" class="btn" onclick="register()">Register</button>
+            </div>
+
+            <div class="icon">
+                <img src="assets/images/icons/fb.jpg">
+                <img src="assets/images/icons/ins.jpg">
+                <img src="assets/images/icons/gm.png">
+                <img src="assets/images/icons/tw.jpg">
+            </div>
+
+            <div id="login" class="input-group">
+                <input type="text" class="input-field" placeholder="User ID" required>
+                <input type="password" class="input-field" placeholder="Enter Password" required>
+                <input type="checkbox" class="check-box"><span class="sp">Remember Password</span>
+                <button type="submit" class="submit-btn">Log In</button>
+            </div>
+        
+            <div id="register" class="input-group">
+                <input type="text" class="input-field" placeholder="User ID" required>
+                <input type="email" class="input-field" placeholder="Enter your email" required>
+                <input type="password" class="input-field" placeholder="Enter Password" required>
+                <input type="checkbox" class="check-box"><span class="sp">I agree to the terms & condition</span>
+                <button type="submit" class="submit-btn">Register</button>
+            </div>
+        </div>
+    </div>
+    <br><br>
+
+    <!--footer-->
+    <div class="footer">
+        <h1>About Us</h1>
+        <p>Explore the Spice of Life:<br> Discover more about the fiery world of chili and unlock a realm of flavor and health benefits. Spice up your culinary journey today!</p>
+
+        <div class="icon">
+            <img src="assets/images/icons/fb.jpg">
+            <img src="assets/images/icons/ins.jpg">
+            <img src="assets/images/icons/gm.png">
+            <img src="assets/images/icons/tw.jpg">
+        </div>
+        
+        <p>&copy: Chili Charm. All rights reserved.</p>
+    </div>
+            
+    <!--java script-->
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        var z = document.getElementById("btnn");
+
+        function register(){
+        x.style.left = "-400px";
+        y.style.left = "50px";
+        z.style.left = "110px";
+        }
+
+        function login(){
+        x.style.left = "50px";
+        y.style.left = "450px";
+        z.style.left = "0px";
+        }
+    </script>
+
+</body>
+</html>
